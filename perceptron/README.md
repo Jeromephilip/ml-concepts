@@ -1,4 +1,4 @@
-# SMS Spam Classifier using Perceptron (from scratch)
+# SMS Spam Classifier using Perceptron
 
 This project implements a perceptron-based spam classifier trained on the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset). The goal was to build a binary classifier from scratch using the classical perceptron algorithm and evaluate its performance on real-world text data.
 
