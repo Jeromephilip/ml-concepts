@@ -24,14 +24,14 @@ w += learning_rate * y_i * x_i
 
 After training the model for 10 epochs, we evaluated it on a 20% test split (stratified to preserve label balance). Here's what we got:
 
-              precision    recall  f1-score   support
+        label  precision  recall    f1-score   support
 
-          -1       0.98      0.99      0.99       966
-           1       0.96      0.89      0.93       149
+        -1       0.98      0.99      0.99       966
+         1       0.96      0.89      0.93       149
 
-    accuracy                           0.98      1115
-   macro avg       0.97      0.94      0.96
-weighted avg       0.98      0.98      0.98
+    accuracy                     0.98      1115
+    macro avg          0.97      0.94      0.96
+    weighted avg       0.98      0.98      0.98
 
 
 ## Key Takeaways
