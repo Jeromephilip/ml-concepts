@@ -1,13 +1,14 @@
     
 import numpy as np
 class Perceptron:
-    def __init__(self, learning_rate=1.0, n_epochs=10):
+    def __init__(self, learning_rate=1.0, n_epochs=10, bias=1.0):
         self.lr = learning_rate
         self.num_epochs = n_epochs
+        self.bias = bias
         self.w = None
 
     def train(self, X, y):
-        X_pad = [x + [1.0] for x in X] # added padding to account for bias term (cleanup)
+        X_pad = [x + [self.bias] for x in X] # added padding to account for bias term (cleanup)
         X_pad = np.array(X_pad)
         y = np.array(y)
         '''
